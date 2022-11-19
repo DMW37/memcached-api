@@ -86,5 +86,10 @@ public class MemCachedTest {
         System.out.println(decrValue);
     }
 
+    @Test
+    public void testFlush() throws InterruptedException, TimeoutException, MemcachedException {
+        client.flushAll();
+    }
+
 
 }
